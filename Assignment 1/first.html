@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is my Question 1</title>
+</head>
+<body>
+	
+	<p id="day"></p>
+	<p id="time"></p>
+<script type="text/javascript">
+	var date=new Date();
+
+	//QUESTION 1
+
+    
+	days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+	document.getElementById('day').innerHTML="Today is : "+days[date.getDay()];
+	document.getElementById('time').innerHTML="Current Time is :"+date.getHours()+"PM :"+date.getMinutes()+" :"+date.getSeconds();
+</script>
+</body>
+</html>

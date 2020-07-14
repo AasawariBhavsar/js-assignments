@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is my Question 3</title>
+</head>
+<body>
+	<p id="date1"></p>
+	<p id="date2"></p>
+	<p id="date3"></p>
+	<p id="date4"></p>
+<script type="text/javascript">
+	var dd=new Date().getDate();
+	var mm=new Date().getMonth()+1;
+	var yyyy=new Date().getFullYear();
+	if(dd<10)
+	{
+		dd='0'+dd;
+	}
+	if(mm<10)
+	{
+		mm='0'+mm;
+	}
+	document.getElementById('date1').innerHTML=mm+"-"+dd+"-"+yyyy;
+    document.getElementById('date2').innerHTML=mm+"/"+dd+"/"+yyyy;
+    document.getElementById('date3').innerHTML=dd+"-"+mm+"-"+yyyy;
+    document.getElementById('date4').innerHTML=dd+"/"+mm+"/"+yyyy;
+</script>
+</body>
+</html>
