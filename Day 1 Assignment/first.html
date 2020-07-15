@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+   <script>
+
+    //    console.assert() writes the message in console when the condition is false 
+       console.assert(document.getElementById('test'),"you have no element of id test")
+
+    //    console.clear() clears the console and gives the message console was cleared
+       console.clear()
+
+    /*    When adding a label to the console.count() method, the label will be written in the console.
+        The first call will write "first: 1", and the second will write "first: 2".
+        This is because both calls have the same label.*/
+
+       console.count('first')
+       console.count('first')
+
+
+    //    the console.time() method starts the timer and the console.timeEnd() method ends the timer and writes the result in the console 
+       console.time()
+       for (let index = 0; index < 100; index++) {
+           
+           console.log(index)
+       }
+       console.timeEnd()
+
+    //   console.group() creates group of messages in console and console.groupEnd() used to end the group
+
+       console.group()
+       console.log('hello')
+       console.log('how are you!!')
+       console.groupEnd()
+       console.log("Hey,I'm outside the group")
+
+
+       
+   </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var declarations are globally scoped.var variables can be updated and re-declared
+        {
+            var a=10
+            console.log('Hey!Im var inside the block',a)
+            a=10.98
+            console.log('Hey!Im var updated',a)
+            var a='sam'
+            console.log('Hey!Im re-declared',a)
+        }
+
+        console.log('Hey!Im var outside the block',a)
+
+    // let declarations are block scoped. let variables can be updated but not re-declared
+       {
+           let b=100
+           console.log('Hey!Im let inside the block',b)
+           b='ashh'
+           console.log('Hey!Im let updated',b)
+            //It will throw an error, Identifier b is already been declared
+                // let b=10.56
+                // console.error('Hey!Im re-declared',b)
+       }
+       
+           // It will throw an error, b is not defined because it is outside the block.
+        //    console.error('Hey!Im let outside the block',b)
+
+
+
+        // const declarations are block scoped.const variables can neither be updated nor re-declared.
+        {
+            const c=1000
+            console.log('Hey!Im const Inside block',c)
+            // It will throw an error, Assignment to constant variable.
+                // c=2000
+                // console.log('Hey!Im const updated',c)
+            //It will throw an error, Identifier c is already been declared   
+                //    const c='tam'
+                //    console.log('Hey!Im const re-declared',c)
+
+        }
+        // It will throw an error, c is not defined because it is outside the block.
+
+          // console.log('Hey!Im const outside the block',c)
+
+    </script>
+</body>
+</html>
