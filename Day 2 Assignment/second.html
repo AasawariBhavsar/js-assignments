@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // String
+
+
+        let text='Hey! Good Morning. How are you';
+
+        // Returns the substring at the specified location within a String object.
+        console.log(text.substring(0,7));
+
+        // Returns a section of a string.
+        console.log(text.slice(0,6))
+
+        // Returns HTML Elements
+        console.log(text.strike())
+        console.log(text.small())
+        console.log(text.sup())
+        console.log(text.big())
+        console.log(text.bold())
+        console.log(text.anchor())
+
+        // Returns a string that contains the concatenation of two or more strings.
+        console.log(text.concat(["I'm fine","Wsup"]))
+
+        // Returns a String value that is made from count copies appended together. If count is 0,the empty string is returned.
+        console.log(text.repeat(3))
+
+        // Replaces text in a string
+        console.log(text.replace("Hey","Hello"))
+
+        // Finds the first substring match in a regular expression search.
+        console.log(text.search("Good"))
+
+        // Determines whether two strings are equivalent.
+        console.log(text.localeCompare("Hey! Good Morning. How are you"))
+        console.log(text.localeCompare("Hey! Hii"))
+
+
+        
+
+
+        // Array
+
+        // Returns the this object after copying a section of the array identified by start and end to the same array starting at position target
+        let arr=['a','b','c','d','e'];
+        console.log(arr.copyWithin(0,2))
+
+        // The fill() method fills the specified elements in an array with a static value.
+        console.log(arr.fill("a",4))
+
+        // Removes elements from an array and, if necessary, inserts new elements in their place
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        console.log(fruits)
+
+        // Sorts an array.
+        console.log(fruits.sort())
+
+        // Appends new elements to an array
+        fruits.push("papaya")
+        console.log(fruits)
+
+        // Removes the last element from an array and returns it.
+        console.log(fruits.pop())
+        console.log(fruits)
+
+
+        
+        
+
+    </script>
+</body>
+</html>
