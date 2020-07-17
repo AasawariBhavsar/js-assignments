@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=+prompt("Enter the marks");
+        // if (marks>=75 && marks<=100) {
+            
+        //     console.log(`Marks are ${marks} and grade is A`);
+        // }
+        // else if(marks<75 && marks>=60)
+        // {
+        //     console.log(`Marks are ${marks} and grade is B`);
+        // }
+        // else if(marks<60 && marks>=40)
+        // {
+        //     console.log(`Marks are ${marks} and grade is C`);
+        // }
+        // else if(marks<40 && marks>=0)
+        // {
+        //     console.log(`Marks are ${marks} and grade is Fail`);
+        // }
+        // else
+        // {
+        //     console.log(`Marks are Invalid`);   
+        // }
+
+
+        // switch (marks) {
+        //     case 75:
+        //         console.log(`Marks are ${marks} and grade is A`);
+        //         break;
+            
+        //     case 50:
+        //         console.log(`Marks are ${marks} and grade is B`);
+        //         break;
+
+        //     case 40:
+        //         console.log(`Marks are ${marks} and grade is C`);
+        //         break;
+
+
+        //     case 30:
+        //         console.log(`Marks are ${marks} and grade is Fail`);
+        //         break;
+
+        //     default:
+        //         console.log(`Marks are Invalid`); 
+
+        
+            
+        // }
+
+
+        let result=(marks>=75 && marks<=100)? `Marks are ${marks} and grade is A`:
+                    (marks<75 && marks>=60)? `Marks are ${marks} and grade is B`:
+                    (marks<60 && marks>=40)? `Marks are ${marks} and grade is C`:
+                     (marks<40 && marks>=0)?  `Marks are ${marks} and grade is Fail`:
+                     `Invalis Marks`;
+
+
+        console.log(result);
+
+                     
+                    
+
+
+    </script>
+</body>
+</html>
