@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Details={
+
+            'abc':4000,
+            'xyz':9000,
+             'pqr':16000,
+             'lmn':30000,
+        }
+
+       let commission;
+        for(name in Details){
+            if (Details[name]>=0 && Details[name]<=5000) 
+            {
+             commission=2/100*Details[name];
+             console.log(`The name of employee is ${name} and sales are ${Details[name]} and commision is ${commission}`);
+
+            }
+            else if (Details[name]>=5001 && Details[name]<=10000) 
+            {
+             commission=5/100*Details[name];
+             console.log(`The name of employee is ${name} and sales are ${Details[name]} and commision is ${commission}`);
+             
+            }
+            else if (Details[name]>=10001 && Details[name]<=20000) 
+            {
+             commission=7/100*Details[name];
+             console.log(`The name of employee is ${name} and sales are ${Details[name]} and commision is ${commission}`);
+             
+            }
+            else if (Details[name]>20000) 
+            {
+             commission=10/100*Details[name];
+             console.log(`The name of employee is ${name} and sales are ${Details[name]} and commision is ${commission}`);
+             
+            }
+            else
+            {
+                console.log("nothing to show")
+            }
+        }
+    </script>
+</body>
+</html>

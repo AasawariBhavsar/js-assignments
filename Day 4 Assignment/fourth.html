@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="button"]
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="4">
+            <input type="text" id="result"/>
+        </td>
+      
+       
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="1" onclick="action('1')" />
+        </td>
+        <td>
+            <input type="button" value="2" onclick="action('2')" />
+        </td>
+        <td>
+            <input type="button" value="3" onclick="action('3')" />
+        </td>
+        <td>
+            <input type="button" value="4" onclick="action('4')" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="5" onclick="action('5')" />
+        </td>
+        <td>
+            <input type="button" value="6" onclick="action('6')" />
+        </td>
+        <td>
+            <input type="button" value="7" onclick="action('7')" />
+        </td>
+        <td>
+            <input type="button" value="8" onclick="action('8')" />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="button" value="9" onclick="action('9')" />
+        </td>
+        <td>
+            <input type="button" value="0" onclick="action('0')" />
+        </td>
+        <td>
+            <input type="button" value="+" onclick="action('+')" />
+        </td>
+        <td>
+            <input type="button" value="-" onclick="action('-')" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="/" onclick="action('/')"/>
+        </td>
+        <td>
+            <input type="button" value="*" onclick="action('*')"/>
+        </td>
+        <td>
+            <input type="button" value="clr" onclick="clr()"/>
+        </td>
+        <td>
+            <input type="button" value="=" onclick="solve()"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="sqrt" onclick="squareRoot()"/>
+        </td>
+        <td>
+            <input type="button" value="%" onclick="solve()"/>
+        </td>
+    </tr>
+    
+   
+
+
+
+
+
+
+
+</table>
+   
+
+
+    <script>
+        function solve()
+        {
+        let x = document.getElementById("result").value
+        let y = eval(x) 
+        document.getElementById("result").value = y 
+        }
+
+
+        let clr=() =>
+        
+        document.getElementById("result").value = "";
+
+        let action=val =>
+         
+             document.getElementById("result").value+=val;
+
+       let squareRoot=() =>
+
+       document.getElementById('result').value=Math.sqrt(document.getElementById('result').value)
+
+
+       
+
+
+       
+        
+        
+    </script>
+</body>
+</html>
