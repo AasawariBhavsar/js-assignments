@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .bgcolor{
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1 id='heading'></h1>
+    <h2 id='clock'></h2>
+    <h1 id='magic'>Click me any time and see the magic!!!</h1>
+    <script>
+     let name=prompt('Enter the name');
+     while(name.length>0){
+     document.getElementById('heading').innerHTML=`Welcome ${name} to our webpage`;
+     break;
+     }
+
+     const ctime=document.getElementById('clock');
+     let timer=()=>{
+         let time=new Date().toLocaleTimeString();
+         ctime.innerText=time;
+
+     }
+
+     setInterval(timer,1000)
+
+     const colorChange=document.getElementById('magic');
+     let clickMe=()=>{
+    
+
+     colorChange.classList.toggle('bgcolor');
+
+     }
+     colorChange.onclick=clickMe;
+     
+
+
+     
+
+    </script>
+</body>
+</html>
