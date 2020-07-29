@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+      
+        <div class="row">
+
+    
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">stopwatch</div>
+                <div class="container">
+                    <div class="card-body">
+                        <div class="timer">
+                            <span class=" p-3">Hrs </span> 
+                            <span class=" p-3">Min </span> 
+                            <span class=" p-3">Sec </span> 
+                            <span class=" p-3">MiliSec</span>
+                        </div>
+                        <div class="timer stopwatch  p-3 ">
+                            <span id="hour" class=" p-3 ">00 </span> 
+                            <span id="min" class=" p-3 ">00 </span> 
+                            <span id="sec" class=" p-3 ">00 </span> 
+                            <span id="milisec" class=" p-3 ">00 </span>
+                        </div>
+                    </div>
+                   
+                </div>
+              
+                  <div class="card-footer">
+                    <button onclick="startStop()" id="start" class="btn btn-primary btn-lg btn-block">Start</button>
+                    <button onclick="reset()" id="restart" class="btn btn-success btn-lg btn-block">Reset</button>
+                  </div>
+                  
+            </div>
+        </div>
+
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+
+        <span id="counting">
+
+        </span>
+  
+</div>
+    <script src="stopwatch.js"></script>
+</body>
+</html>
